@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<style>
+			body,html{
+				background: #fafafa;
+			}
+			#header{
+				width: 990px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.header-mall{
+				margin-top: 20px;
+			}
+			.header-mall a{
+				float: left;
+				
+			}
+			.header-mall-inter{
+				width: 180px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				border-left: 1px solid #E6E6E6;
+				font-size: 15px;
+				margin-left: 15px;
+				text-decoration: none;
+				color: #666;
+				margin-top: 5px;
+			}
+			#header span{
+				float: right;
+				margin-top: 20px;
+				font-size: 15px;
+				color: #666;
+			}
+			#header .register{
+				display: block;
+				float: right;
+				margin-left: 15px;
+				text-decoration: none;
+				width: 80px;
+				height: 23px;
+				text-align: center;
+				line-height: 23px;
+				background: #fafafa;
+				color:#cd1f1f;
+			}
+			#header .register:hover{
+				background: #cd1f1f;
+				color:#fafafa;
+			}
+			#main{
+				width: 990px;
+				margin: 0 auto;
+				height: 350px;
+				margin-top: 20px;
+				border: 1px solid #c6c6c6;
+			}
+			#main .main-img{
+				float: left;
+			}
+			.main-write{
+				height: 350px;
+				background: #fff;
+			}
+			.main-write-top{
+				float: left;
+				width: 300px;
+				height: 50px;
+				margin-left: 100px;
+				
+			}
+			.main-write-top p:nth-child(1){
+				float: left;
+				font-size: 20px;
+				color: #666;
+				line-height: 50px;				
+			}
+			.main-write-top p:nth-child(2){
+				float: right;
+				font-size: 12px;
+				line-height: 60px;								
+			}
+			.iphone{
+				color: #666666;
+				text-decoration: none;
+			}
+			
+			.main-inner input,.plain-login input{
+				text-indent: 5px;
+				width: 290px;
+				height: 35px;
+				outline: none;
+				margin-left: 102px;
+				box-sizing: border-box;
+			}
+			.main-inner input:nth-child(1),.plain-login input:nth-child(1){
+				margin-top: 30px;
+				margin-bottom: 10px;
+			}
+			.main-inner .lipsw,.plain-login .lipsw{
+				position: relative;
+				left: 330px;
+				font-size: 14px;
+				text-decoration: none;
+				top: 5px;
+			}
+			.main-inner .login1,.plain-login .login1{
+				position: relative;
+				top: 50px;
+				left: -72px;
+				color: #fff;
+				background: #db2d2d;
+				/*outline: none;*/
+				border: 0;
+				cursor: pointer;
+				height: 40px;
+				
+			}
+			.login1:hover{
+				background:#cd1f1f;
+			}
+			/*普通方式登录*/
+			/*.plain-login input{
+				width: 290px;
+				height: 35px;
+				outline: none;
+				margin-left: 102px;
+			}*/
+			.photo-num{
+				width:102px;
+				height: 34px;
+				float: right;
+				margin-right: 75px;
+				/*margin-top: 7px;*/
+				border: 1px solid black;
+			}
+			.photo-proving{
+				width:102px;
+				height: 34px;
+			}
+			.plain-login .photo{
+				width:165px;			
+			}
+			.plain-login .chit-proving{
+				margin-top: 10px;
+				width: 165px;
+			}
+			.plain-login .send-chit-proving{
+				width: 125px;
+				text-align: center;
+				line-height: 33px;
+				float: right;
+				display: block;
+				height: 33px;
+				background: #f8f8f8;
+				cursor: pointer;
+				position: relative;
+				top: -35px;
+				right: 77px;
+				border: 1px solid #ccc;
+				font-size: 14px;
+			}
+			.plain-login .login-iphone{
+				position: relative;
+				top: -25px;
+				left: 0px;
+				height: 40px;
+				width:293px;
+			}
+			/*.active{
+				border:1px solid red;
+			}*/
+			.dynamic{
+				display:block;
+			}
+			.common{
+				display: none;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.12.3.js" ></script>
+		<script src="js/login.js"></script>
+		<script src="js/gVerify.js"></script>
+		
+	</head>
+	<body>
+		<div id="header">
+			<div class="header-mall">
+				<a href="#"><img src="img/login/shop_182x60.png"/></a>
+				<a href="#" class="header-mall-inter" title="ZOL商城">中关村在线旗下网上商城</a>
+			</div>
+			<span>还没有ZOL商城账号吗?<a href="#" class="register">立即注册</a></span>
+		</div>
+		<div id="main">
+			<a href="#" class="main-img"><img src="img/login/ad2_1.jpg"/></a>
+			<div class="dynamic">
+				<div class="main-write">
+					<div class="main-write-top">
+						<p>登录zol商城</p>
+						<p><i class="iconfont" style="color:#cd1f1f;">&#xe658;</i><a href="#"  class="iphone"> 手机动态码登录</a></p>
+					</div>
+					<!--手机动态方式登录-->
+					<div class="main-inner">
+							<input type="text" placeholder="手机号/邮箱/用户名" class="shoji"/><br />
+							<input type="password" placeholder="密码"/><br />
+							<a href="#" class="lipsw">忘记密码？</a>
+							<input type="button" value="登录" class="login1"/>
+					</div>
+				</div>
+			</div>
+				<!--普通方式登录-->
+			<div class="common">
+				<div class="main-write">
+					<div class="main-write-top">
+						<p>登录zol商城</p>
+						<p><i class="iconfont" style="color:#cd1f1f;">&#xe658;</i><a href="#"  class="iphone"> 手机动态码登录</a></p>
+					</div>
+					<div class="plain-login">
+						<input type="text" placeholder="手机号/邮箱/用户名" /><br />
+						<input type="text" id="code_input" class="photo" placeholder="请输入验证码"/>
+						<div class="photo-num"><div id="v_container1" class="photo-proving"></div></div>
+						<input type="text" placeholder="短信验证" class="chit-proving" />
+						<span class="send-chit-proving">发送验证</span>
+						<input type="button" value="登录" class="login1 login-iphone"/>
+					</div>
+					<!--合作账号登录-->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
